@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تم تغيير وجهتك! | نادي العدالة النيابي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+<div id="app">
+  <header class="top"><span class="menuIcon" aria-hidden="true"></span></header>
+<button class="snd" id="soundBtn" aria-label="تشغيل أو كتم الصوت" aria-pressed="true"><span class="ic">🔊</span><span class="tx">الصوت</span></button>
+<div id="fx" aria-hidden="true"></div>
+  <main class="home">
+    <img class="logo" src="assets/club-logo.png" alt="شعار نادي العدالة النيابي">
+    <h1>نادي العدالة النيابي</h1>
+    <p class="tag">نوعي، نمكّن، نُحدث فرقًا</p>
+    <div class="btns"><button class="pill fill" data-fake>الانضمام للنادي</button><button class="pill line" data-fake>اطّلع على برنامج الشهر</button></div>
+    <div class="chev">⌄</div>
+    <span class="chip">إدارة النادي</span>
+    <h2>الهيكل القيادي</h2>
+    <p class="sub">لمحة سريعة عن المناصب القيادية الأساسية. للتفاصيل الكاملة، تفضل بزيارة صفحة «من نحن».</p>
+    <div class="grid">
+      <div class="card"><i>ر</i><b>رئيس النادي</b><small>معن بن علي الشمري</small></div>
+      <div class="card"><i>ن</i><b>نائبة الرئيس</b><small>جود بنت غازي المطيري</small></div>
+      <div class="card"><i>ن</i><b>نائب الرئيس</b><small>سعود بن فهد الدحيلان</small></div>
+    </div>
+    <button class="pill line more" data-fake>تفاصيل الهيكل القيادي</button>
+  </main>
+</div>
+
+<aside id="sys" hidden aria-live="polite">
+  <h3>⚠ حالة النظام: خلل مكتشف</h3>
+  <dl><dt>الاتصال بالموقع</dt><dd>مستقر</dd><dt>مسار الموقع</dt><dd>غير معروف</dd><dt>رمز الخطأ</dt><dd dir="ltr">J-2026</dd></dl>
+  <small>خلل تمثيلي ضمن تجربة تفاعلية، ولا يؤثر على أي موقع حقيقي.</small>
+</aside>
+
+<section id="chat" hidden role="dialog" aria-label="محادثة عَدْل">
+  <div class="chead"><div><b>عَدْل</b><small>مساعد نادي العدالة</small></div><span class="onl"><i></i>متصل</span></div>
+  <div id="log" aria-live="polite"></div>
+</section>
+
+<section id="end">
+  <canvas id="grid" aria-hidden="true"></canvas>
+  <div class="endIn">
+    <h1 id="e1"></h1><p id="e2"></p><p id="e3"></p><div class="date" id="e4"></div><p id="e5"></p>
+    <button class="pill fill" id="again">إعادة التجربة</button>
+  </div>
+  <img class="endLogo" src="assets/club-logo.png" alt="شعار نادي العدالة النيابي">
+</section>
+<script src="script.js"></script>
+</body>
+</html>
